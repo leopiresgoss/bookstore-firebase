@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
-import BookList from './components/Bookstore/Booklist';
+import Bookstore from './pages/Bookstore';
 
 const App = () => (
   <>
     <Navbar />
     <Routes>
-      <Route path="/" element={<BookList />} />
+      <Route path="/" element={<Bookstore />} />
     </Routes>
   </>
 );
