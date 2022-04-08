@@ -1,9 +1,13 @@
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
+import BookList from './components/Bookstore/Booklist';
 
 const App = () => (
   <>
     <Navbar />
-    <div>Feature section</div>
+    <Routes>
+      <Route path="/" element={<BookList />} />
+    </Routes>
   </>
 );
 
