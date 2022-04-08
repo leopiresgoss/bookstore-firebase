@@ -1,10 +1,15 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
+import { HashRouter } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <div>Hello world</div>
+    <HashRouter>
+      <App />
+    </HashRouter>
   </React.StrictMode>,
 );
 
